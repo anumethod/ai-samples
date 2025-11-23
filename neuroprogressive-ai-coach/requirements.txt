@@ -1,0 +1,40 @@
+# NeuroProgressive AI Coach Requirements
+
+# Core dependencies
+python>=3.8
+
+# Optional: For integration with Google AI (Gemini)
+# google-generativeai>=0.3.0
+
+# Optional: For data analysis and visualization
+# numpy>=1.21.0
+# pandas>=1.3.0
+# matplotlib>=3.4.0
+
+# Optional: For advanced NLP (if enhancing emotion recognition)
+# transformers>=4.20.0
+# torch>=1.10.0
+
+# Optional: For API development (if building REST API)
+# fastapi>=0.95.0
+# uvicorn>=0.20.0
+# pydantic>=2.0.0
+
+# Optional: For database storage
+# sqlalchemy>=2.0.0
+# psycopg2-binary>=2.9.0  # PostgreSQL
+# pymongo>=4.3.0  # MongoDB
+
+# Optional: For testing
+# pytest>=7.0.0
+# pytest-cov>=4.0.0
+# pytest-asyncio>=0.21.0
+
+# Optional: For documentation
+# mkdocs>=1.4.0
+# mkdocs-material>=9.0.0
+
+# Note: This is a minimal requirements file
+# Install only what you need for your use case
+# For basic functionality, no external packages are required
+# as the system uses only Python standard library

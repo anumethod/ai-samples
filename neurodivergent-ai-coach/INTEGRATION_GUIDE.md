@@ -1,6 +1,6 @@
-# Integration Guide for NeuroProgressive AI Coach
+# Integration Guide for NeuroDivergent AI Coach
 
-This guide explains how to integrate the NeuroProgressive AI Coach into the ihep.app platform.
+This guide explains how to integrate the NeuroDivergent AI Coach into the ihep.app platform.
 
 ## Table of Contents
 
@@ -15,7 +15,7 @@ This guide explains how to integrate the NeuroProgressive AI Coach into the ihep
 
 ## Architecture Overview
 
-The NeuroProgressive AI Coach system consists of four main components:
+The NeuroDivergent AI Coach system consists of four main components:
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -26,7 +26,7 @@ The NeuroProgressive AI Coach system consists of four main components:
 └─────────────────────────┬───────────────────────────────┘
                           │ REST API / WebSocket
 ┌─────────────────────────┴───────────────────────────────┐
-│           NeuroProgressive AI Coach Service             │
+│           NeuroDivergent AI Coach Service               │
 │  ┌──────────────┐  ┌─────────────┐  ┌───────────────┐  │
 │  │ Coach Agent  │  │ Curriculum  │  │ Progress Track│  │
 │  │ - EI         │  │ Management  │  │ & Analytics   │  │
@@ -47,8 +47,8 @@ The NeuroProgressive AI Coach system consists of four main components:
 ### Installation
 
 ```bash
-# Clone or download the neuroprogressive-ai-coach directory
-cd neuroprogressive-ai-coach
+# Clone or download the neurodivergent-ai-coach directory
+cd neurodivergent-ai-coach
 
 # Install dependencies (minimal setup requires no external packages)
 pip install -r requirements.txt  # Optional dependencies
@@ -57,11 +57,11 @@ pip install -r requirements.txt  # Optional dependencies
 ### Basic Usage
 
 ```python
-from agent.coach import NeuroprogressiveCoach
+from agent.coach import NeurodivergentCoach
 from models.member import Member
 
 # Initialize coach
-coach = NeuroprogressiveCoach()
+coach = NeurodivergentCoach()
 
 # Create member (typically loaded from your database)
 member = Member(
@@ -102,7 +102,7 @@ if qualified:
 from neuroprogressive_coach.agent.coach import NeuroprogressiveCoach
 
 def check_member_training_eligibility(member_id):
-    coach = NeuroprogressiveCoach()
+    coach = NeurodivergentCoach()
     member = load_member_from_db(member_id)
 
     # Sync metrics from ihep.app
@@ -123,7 +123,7 @@ def check_member_training_eligibility(member_id):
 **Integration:**
 ```python
 def handle_training_message(member_id, message):
-    coach = NeuroprogressiveCoach()
+    coach = NeurodivergentCoach()
     member = load_member_from_db(member_id)
 
     response = coach.continue_conversation(
@@ -155,7 +155,7 @@ def log_practice_hours(member_id, hours, supervised=True):
     save_member_to_db(member)
 
     # Check if this triggers advancement eligibility
-    coach = NeuroprogressiveCoach()
+    coach = NeurodivergentCoach()
     progress = coach.assess_progress(member_id)
     return progress
 ```
@@ -228,7 +228,7 @@ For real-time conversations:
 @app.websocket("/ws/training/{member_id}")
 async def training_websocket(websocket: WebSocket, member_id: str):
     await websocket.accept()
-    coach = NeuroprogressiveCoach()
+    coach = NeurodivergentCoach()
 
     while True:
         message = await websocket.receive_text()
@@ -456,20 +456,20 @@ CRISIS_NOTIFICATION_EMAIL=crisis@ihep.app
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: neuroprogressive-coach
+  name: neurodivergent-coach
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: neuroprogressive-coach
+      app: neurodivergent-coach
   template:
     metadata:
       labels:
-        app: neuroprogressive-coach
+        app: neurodivergent-coach
     spec:
       containers:
       - name: coach
-        image: ihep/neuroprogressive-coach:latest
+        image: ihep/neurodivergent-coach:latest
         ports:
         - containerPort: 8000
         env:

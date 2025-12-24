@@ -1,10 +1,10 @@
-# NeuroProgressive AI Coach
+# NeuroDivergent AI Coach
 
 A comprehensive AI-powered peer management and positive lifestyle coaching system designed for the Integrated Healthy Empowerment Program (ihep.app).
 
 ## Overview
 
-The NeuroProgressive AI Coach acts as a Professor of Peer Management and Positive Lifestyle Coaching, guiding ihep.app members through a structured training program to become peer assistants, peer counselors, and eventually full-time peer managers.
+The NeuroDivergent AI Coach acts as a Professor of Peer Management and Positive Lifestyle Coaching, guiding ihep.app members through a structured training program to become peer assistants, peer counselors, and eventually full-time peer managers.
 
 ## Features
 
@@ -18,7 +18,7 @@ The NeuroProgressive AI Coach acts as a Professor of Peer Management and Positiv
 ## Architecture
 
 ```
-neuroprogressive-ai-coach/
+neurodivergent-ai-coach/
 ├── agent/                  # Core AI agent implementation
 │   ├── coach.py           # Main coaching agent
 │   ├── emotional_intelligence.py  # EI and humanistic response system
@@ -89,11 +89,11 @@ The AI Coach operates under strict ethical principles:
 ## Getting Started
 
 ```python
-from agent.coach import NeuroprogressiveCoach
+from agent.coach import NeurodivergentCoach
 from models.member import Member
 
 # Initialize the coach
-coach = NeuroprogressiveCoach()
+coach = NeurodivergentCoach()
 
 # Create or load a member profile
 member = Member(

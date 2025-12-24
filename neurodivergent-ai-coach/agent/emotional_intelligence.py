@@ -1,5 +1,5 @@
 """
-Emotional Intelligence Module for NeuroProgressive AI Coach
+Emotional Intelligence Module for NeuroDivergent AI Coach
 
 This module implements emotional intelligence capabilities including empathy,
 emotional recognition, humanistic response generation, and therapeutic communication.
@@ -66,7 +66,7 @@ class ResponseStrategy:
 
 class EmotionalIntelligence:
     """
-    Emotional Intelligence system for the NeuroProgressive AI Coach.
+    Emotional Intelligence system for the NeuroDivergent AI Coach.
 
     Implements empathy, emotional recognition, and humanistic response generation
     to create authentic, supportive interactions.

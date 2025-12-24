@@ -1,5 +1,5 @@
 """
-API Integration Example for NeuroProgressive AI Coach
+API Integration Example for NeuroDivergent AI Coach
 
 This example shows how to integrate the coach with a REST API
 for use in the ihep.app platform.
@@ -15,7 +15,7 @@ import json
 
 class CoachAPI:
     """
-    Conceptual API wrapper for NeuroProgressive AI Coach
+    Conceptual API wrapper for NeuroDivergent AI Coach
 
     In production, this would be implemented with FastAPI or similar framework
     """
@@ -23,8 +23,8 @@ class CoachAPI:
     def __init__(self):
         """Initialize the API"""
         # In production, initialize the coach here
-        # from agent.coach import NeuroprogressiveCoach
-        # self.coach = NeuroprogressiveCoach()
+        # from agent.coach import NeurodivergentCoach
+        # self.coach = NeurodivergentCoach()
         pass
 
     # ==================== Member Endpoints ====================

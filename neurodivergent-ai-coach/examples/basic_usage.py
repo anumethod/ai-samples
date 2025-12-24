@@ -1,5 +1,5 @@
 """
-Basic Usage Example for NeuroProgressive AI Coach
+Basic Usage Example for NeuroDivergent AI Coach
 
 This example demonstrates how to:
 1. Create members
@@ -15,7 +15,7 @@ import os
 # Add parent directory to path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from agent.coach import NeuroprogressiveCoach
+from agent.coach import NeurodivergentCoach
 from models.member import Member, EngagementMetrics, AdherenceMetrics
 
 
@@ -69,7 +69,7 @@ def example_1_check_qualification():
     print("EXAMPLE 1: Checking Member Qualification")
     print("=" * 70)
 
-    coach = NeuroprogressiveCoach()
+    coach = NeurodivergentCoach()
 
     # Qualified member
     qualified_member = create_sample_member(qualified=True)
@@ -104,7 +104,7 @@ def example_2_start_training():
     print("EXAMPLE 2: Starting Training Conversation")
     print("=" * 70)
 
-    coach = NeuroprogressiveCoach()
+    coach = NeurodivergentCoach()
     member = create_sample_member(qualified=True)
 
     welcome_message = coach.start_training_conversation(member)
@@ -117,7 +117,7 @@ def example_3_conversation_flow():
     print("EXAMPLE 3: Conversation Flow")
     print("=" * 70)
 
-    coach = NeuroprogressiveCoach()
+    coach = NeurodivergentCoach()
     member = create_sample_member(qualified=True)
 
     # Start conversation
@@ -142,7 +142,7 @@ def example_4_teach_module():
     print("EXAMPLE 4: Teaching a Module")
     print("=" * 70)
 
-    coach = NeuroprogressiveCoach()
+    coach = NeurodivergentCoach()
     member = create_sample_member(qualified=True)
 
     # Start training first
@@ -160,7 +160,7 @@ def example_5_track_progress():
     print("EXAMPLE 5: Tracking Progress")
     print("=" * 70)
 
-    coach = NeuroprogressiveCoach()
+    coach = NeurodivergentCoach()
     member = create_sample_member(qualified=True)
 
     # Start training
@@ -186,7 +186,7 @@ def example_6_curriculum_overview():
     print("EXAMPLE 6: Curriculum Overview")
     print("=" * 70)
 
-    coach = NeuroprogressiveCoach()
+    coach = NeurodivergentCoach()
     overview = coach.get_curriculum_overview()
     print(overview)
 
@@ -197,7 +197,7 @@ def example_7_emotional_intelligence():
     print("EXAMPLE 7: Emotional Intelligence")
     print("=" * 70)
 
-    coach = NeuroprogressiveCoach()
+    coach = NeurodivergentCoach()
     member = create_sample_member(qualified=True)
 
     # Start training
@@ -265,7 +265,7 @@ def run_all_examples():
     ]
 
     print("\n" + "=" * 70)
-    print("NEUROPROGRESSIVE AI COACH - USAGE EXAMPLES")
+    print("NEURODIVERGENT AI COACH - USAGE EXAMPLES")
     print("=" * 70)
 
     for i, (name, example_func) in enumerate(examples, 1):

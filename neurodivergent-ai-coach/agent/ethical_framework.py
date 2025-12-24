@@ -1,5 +1,5 @@
 """
-Ethical Framework for the NeuroProgressive AI Coach
+Ethical Framework for the NeuroDivergent AI Coach
 
 This module implements the ethical guidelines, moral compass, and best practices
 that govern all interactions and decisions made by the AI coach.
@@ -49,7 +49,7 @@ class EthicalDecision:
 
 class EthicalFramework:
     """
-    Comprehensive ethical framework for the NeuroProgressive AI Coach.
+    Comprehensive ethical framework for the NeuroDivergent AI Coach.
 
     This class implements ethical decision-making, boundary monitoring,
     and ensures all coach behaviors align with professional standards.

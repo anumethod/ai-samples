@@ -1,5 +1,5 @@
 """
-Member data model for tracking trainees in the NeuroProgressive AI Coach system
+Member data model for tracking trainees in the NeuroDivergent AI Coach system
 """
 
 from dataclasses import dataclass, field
@@ -143,7 +143,7 @@ class TrainingProgress:
 @dataclass
 class Member:
     """
-    Complete member profile for the NeuroProgressive AI Coach system
+    Complete member profile for the NeuroDivergent AI Coach system
     """
     # Identity
     id: str

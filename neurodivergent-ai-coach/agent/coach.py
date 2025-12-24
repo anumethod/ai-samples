@@ -1,5 +1,5 @@
 """
-NeuroProgressive AI Coach - Main Coach Agent
+NeuroDivergent AI Coach - Main Coach Agent
 
 This is the main AI agent that acts as Professor of Peer Management and
 Positive Lifestyle Coaching, facilitating training for ihep.app members.
@@ -37,9 +37,9 @@ class CoachingSession:
     duration_minutes: Optional[int]
 
 
-class NeuroprogressiveCoach:
+class NeurodivergentCoach:
     """
-    Main NeuroProgressive AI Coach
+    Main NeuroDivergent AI Coach
 
     Acts as Professor of Peer Management and Positive Lifestyle Coaching,
     combining curriculum expertise, ethical guidance, and emotional intelligence
@@ -54,7 +54,7 @@ class NeuroprogressiveCoach:
         self.session_history: Dict[str, List[CoachingSession]] = {}
         self.active_members: Dict[str, Member] = {}
 
-        print("NeuroProgressive AI Coach initialized.")
+        print("NeuroDivergent AI Coach initialized.")
         print("Ready to facilitate peer management and positive lifestyle coaching training.")
 
     def check_qualification(self, member: Member) -> Tuple[bool, Dict]:
@@ -131,7 +131,7 @@ class NeuroprogressiveCoach:
             "**What Makes This Training Special:**",
             "",
             "✨ **Humanistic Approach**: We honor your humanity, your story, and your unique gifts",
-            "🧠 **NeuroProgressive Method**: Evidence-based practices grounded in neuroscience and positive psychology",
+            "🧠 **NeuroDivergent Method**: Evidence-based practices grounded in neuroscience and positive psychology",
             "❤️ **Emotional Intelligence**: You'll develop deep empathy and authentic connection skills",
             "⚖️ **Ethical Excellence**: Strong moral compass and professional boundaries guide everything",
             "💰 **Paid Opportunity**: Starting at Level 2, you'll receive compensation while you train",
@@ -606,7 +606,7 @@ class NeuroprogressiveCoach:
     def get_curriculum_overview(self) -> str:
         """Get complete curriculum overview"""
         response_parts = [
-            "**NeuroProgressive AI Coach - Complete Training Curriculum**",
+            "**NeuroDivergent AI Coach - Complete Training Curriculum**",
             "",
             "This comprehensive training program prepares ihep.app members to become skilled peer supporters, counselors, and managers.",
             ""
@@ -638,10 +638,10 @@ class NeuroprogressiveCoach:
 # Example usage and testing
 if __name__ == "__main__":
     # Create coach
-    coach = NeuroprogressiveCoach()
+    coach = NeurodivergentCoach()
 
     print("\n" + "=" * 70)
-    print("NEUROPROGRESSIVE AI COACH - DEMONSTRATION")
+    print("NEURODIVERGENT AI COACH - DEMONSTRATION")
     print("=" * 70)
 
     # Create sample member

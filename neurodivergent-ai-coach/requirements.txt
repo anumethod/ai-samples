@@ -1,4 +1,4 @@
-# NeuroProgressive AI Coach Requirements
+# NeuroDivergent AI Coach Requirements
 
 # Core dependencies
 python>=3.8

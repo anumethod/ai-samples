@@ -1,5 +1,5 @@
 """
-NeuroProgressive AI Coach - Curriculum Design
+NeuroDivergent AI Coach - Curriculum Design
 
 This module defines the comprehensive training curriculum for peer assistants,
 counselors, and managers in the Integrated Healthy Empowerment Program.
@@ -67,7 +67,7 @@ class TrainingLevel:
 
 class CurriculumDesign:
     """
-    Complete curriculum design for the NeuroProgressive AI Coach system.
+    Complete curriculum design for the NeuroDivergent AI Coach system.
 
     This class defines the entire training progression from qualified member
     to full-time peer manager, including all modules, objectives, and criteria.
@@ -1070,7 +1070,7 @@ if __name__ == "__main__":
     curriculum = CurriculumDesign()
 
     # Display overview
-    print("NeuroProgressive AI Coach - Training Curriculum\n")
+    print("NeuroDivergent AI Coach - Training Curriculum\n")
     print("=" * 60)
 
     for level in curriculum.get_all_levels():

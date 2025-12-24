@@ -99,7 +99,7 @@ if qualified:
 **Integration:**
 ```python
 # In your ihep.app backend
-from neuroprogressive_coach.agent.coach import NeuroprogressiveCoach
+from neurodivergent_coach.agent.coach import NeurodivergentCoach
 
 def check_member_training_eligibility(member_id):
     coach = NeurodivergentCoach()
